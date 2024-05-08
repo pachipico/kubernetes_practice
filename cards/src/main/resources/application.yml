@@ -1,0 +1,8 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: cards
+  config:
+    import: "configserver:http://172.30.1.44:8084/"
+

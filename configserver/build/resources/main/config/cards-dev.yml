@@ -1,0 +1,19 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: cards
+  datasource:
+    url: jdbc:mysql://mysql:3306/cards
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+
+build:
+  version: 1.0

@@ -1,0 +1,20 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: accounts
+  datasource:
+    url: jdbc:mysql://mysql:3306/accounts
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+            ddl-auto: create
+    show-sql: true
+
+
+build:
+  version: 1.0
+

@@ -1,0 +1,11 @@
+
+J
+java:S1128"(Remove this unused import 'lombok.Data'.(÷í«ÿÿÿÿÿ8Œ‘ŠÇô1
+I
+java:S1128",Remove this unused import 'lombok.ToString'.(¹ÂÄÓ8Œ‘ŠÇô1
+}
+java:S1128"`Remove this unused import 'org.springframework.boot.context.properties.bind.ConstructorBinding'.(¯ŒÅĞ8‘ŠÇô1
+s
+java:S1128"QRemove this unused import 'org.springframework.context.annotation.Configuration'.(¬²Úäşÿÿÿÿ8‘ŠÇô1
+g
+java:S1128"ERemove this unused import 'org.springframework.stereotype.Component'.(Ş÷Ñ¸ÿÿÿÿÿ8ÒË‹Çô1

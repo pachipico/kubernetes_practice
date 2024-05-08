@@ -1,0 +1,14 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: accounts
+
+accounts:
+  message: "Welcome to EazyBank accounts related local APIssadfa "
+  contactDetails:
+    name: "John Doe - Developer"
+    email: "john@eazybank.com"
+  onCallSupport:
+    - (555) 555-1234asdsf
+    - (555) 523-1345

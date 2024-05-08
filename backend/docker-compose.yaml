@@ -1,0 +1,65 @@
+
+services:
+  configserver:
+    image: pachipico/configserver:latest
+    container_name: configserver-container
+    platform: linux/amd64
+    ports:
+      - 8084:8084
+    networks:
+      - "kubernetes-network"
+    environment:
+      - SPRING_PROFILES_ACTIVE=native
+
+  accounts:
+    image: pachipico/accounts:latest
+    container_name: accounts-container
+    platform: linux/amd64
+    profiles:
+      - "dev"
+    ports:
+      - 8080:8080
+    networks:
+      - "kubernetes-network"
+    depends_on:
+      - "configserver"
+    environment:
+      - SPRING_APPLICATION_NAME=accounts
+      - SPRING_CLOUD_CONFIG_URI=http://configserver:8084
+
+  cards:
+    image: pachipico/cards:latest
+    container_name: cards-container
+    platform: linux/amd64
+    profiles:
+      - "dev"
+    ports:
+      - 8081:8081
+    networks:
+      - "kubernetes-network"
+    depends_on:
+      - "configserver"
+    environment:
+      - SPRING_APPLICATION_NAME=accounts
+      - SPRING_CLOUD_CONFIG_URI=http://configserver:8084
+
+  loans:
+    build: ../loans
+    image: pachipico/loans:latest
+    container_name: loans-container
+    platform: linux/amd64
+    profiles:
+      - "dev"
+    ports:
+      - 8082:8082
+    networks:
+      - "kubernetes-network"
+    depends_on:
+      - "configserver"
+    environment:
+      - SPRING_APPLICATION_NAME=accounts
+      - SPRING_CLOUD_CONFIG_URI=http://configserver:8084
+
+networks:
+  kubernetes-network:
+    external: true

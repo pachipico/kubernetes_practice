@@ -1,0 +1,24 @@
+
+^
+java:S17106"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8óÕÆô1
+^
+java:S1710P"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8óÕÆô1
+^
+java:S1710j"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8óÕÆô1
+_
+java:S1710"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8óÕÆô1
+_
+java:S1710°"<Remove the 'ApiResponses' wrapper from this annotation group(Å¬†—üÿÿÿÿ8óÕÆô1
+Y
+java:S6353`"<Use concise character class syntax '\\d' instead of '[0-9]'.(÷‘„§8¼ÖÆô1
+Z
+java:S6353¢"<Use concise character class syntax '\\d' instead of '[0-9]'.(÷‘„§8ÃÖÆô1
+M	java:S106Å"+Replace this use of System.out by a logger.(áÇ»€úÿÿÿÿ8ƒ¸±Æô1
+X
+java:S1128"6Remove this unused import 'lombok.AllArgsConstructor'.(´œ¾öùÿÿÿÿ8¨Àîô1
+R
+java:S1128"5Remove this unused import 'lombok.NoArgsConstructor'.(¸¨›8¨Àîô1
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8¨Àîô1
+l
+java:S1128"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›8©Àîô1
